@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class NotOrtalamasi{
+public class GradeAverage {
 
     public  void grade(){
 

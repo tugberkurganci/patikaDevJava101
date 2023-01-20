@@ -5,8 +5,9 @@ public class Main {
 
 
 
-        KdvAmount kdvAmount=new KdvAmount();
-        kdvAmount.kdv(100);
+       TriangleArea triangleArea=new TriangleArea();
+
+       triangleArea.area(3,4,5);
 
     }
 
