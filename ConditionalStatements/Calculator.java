@@ -23,14 +23,23 @@ public class Calculator {
                 System.out.println(number1 + number2);
                 break;
             case 2:
-                System.out.println(number1-number2);
+                System.out.println(number1 - number2);
                 break;
             case 3:
-                System.out.println(number1*number2);
+                System.out.println(number1 * number2);
                 break;
+
             case 4:
-                System.out.println(number1/number2);
-                break;
+
+            switch (number2) {
+                case 0:
+                    System.out.println("it cant be divide with 0");
+                    break;
+                default:
+                    System.out.println(number1 / number2);
+            }
+            default:
+                System.out.println("try again");
         }
 
     }
