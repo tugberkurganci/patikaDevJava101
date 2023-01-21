@@ -25,8 +25,14 @@ public class FightTicketPrice {
                 if (age < 12) totalPrice = totalPrice / 2;
                 if (age <= 24 && age >= 12) totalPrice = totalPrice / 100 * 90;
                 if (age > 65) totalPrice = totalPrice / 100 * 70;
-                if (type==2)totalPrice=totalPrice/100*80;
-                System.out.println("totalPrice:" + totalPrice);
+                if (type==2) {
+                    totalPrice = totalPrice / 100 * 80;
+                    if (age < 12) totalPrice = totalPrice / 2;
+                    if (age <= 24 && age >= 12) totalPrice = totalPrice / 100 * 90;
+                    if (age > 65) totalPrice = totalPrice / 100 * 70;
+
+                }
+                    System.out.println("totalPrice:" + totalPrice);
             }
         } catch (InputMismatchException e) {
             System.out.println("you can only enter integers");
