@@ -1,3 +1,5 @@
+package Basic;
+
 public class TriangleArea {
 
     public void area(int edge1,int edge2,int edge3){

@@ -1,3 +1,5 @@
+package Basic;
+
 public class KdvAmount {
 
     public void kdv(int amount) {
