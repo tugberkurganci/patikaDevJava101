@@ -8,8 +8,8 @@ public class PowerOf4Or5 {
         Scanner scanner = new Scanner(System.in);
         System.out.println("enter the number");
         int number = scanner.nextInt();
-        for (int i = 2; i < number; i = i * 4) {
-            System.out.println(i);
+        for (int i = 1; i < number; i = i * 4) {
+            if (i>1) System.out.println(i);
         }
         System.out.println("these numbers are multiples of 4");
     }
@@ -19,8 +19,8 @@ public class PowerOf4Or5 {
         Scanner scanner = new Scanner(System.in);
         System.out.println("enter the number");
         int number = scanner.nextInt();
-        for (int i = 2; i < number; i = i * 4) {
-            System.out.println(i);
+        for (int i = 1; i < number; i = i * 5) {
+           if (i>1)System.out.println(i);
         }
         System.out.println("these numbers are multiples of 5");
     }
