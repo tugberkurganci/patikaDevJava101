@@ -13,17 +13,21 @@ public class PrimeRecursive { //5 4 3 2 1
         if (isPrime) System.out.println("prime");else System.out.println("this is not prime");
     }
     public boolean prime(int number, int start) {
-        boolean isPrime = true;
-        if (number == start) return isPrime;
-        else {
-            if (!(number % start == 0)) isPrime = true;
-            else isPrime = false;
-            if (isPrime) {
-                prime(number, start + 1);
-            }
+        if (number <= 2) {
+            return (number == 2) ? true : false;
         }
+        if (number == start) {
 
-        return isPrime;
+            return true;
+
+        }
+        if (number % start == 0) {
+
+            return false;
+        }
+        return prime(number,start+1);
+
     }
-}
+    }
+
 
