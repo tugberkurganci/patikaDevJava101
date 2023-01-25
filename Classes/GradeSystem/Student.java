@@ -76,9 +76,9 @@ public class Student {
     public void printNote() {
 
 
-        System.out.println(this.course1.name + "     grade\t:" + this.course1.note);
-        System.out.println(this.course2.name + "     grade\t:" + this.course2.note);
-        System.out.println(this.course3.name + "     grade\t:" + this.course3.note);
+        System.out.println(this.course1.name + "     grade\t:" + ((this.course1.note * (100 - verbalGradeEffect(course1)) / 100.0) + (this.course1.verbalGrade * (verbalGradeEffect(course1)) / 100.0)));
+        System.out.println(this.course2.name + "     grade\t:" + ((this.course2.note * (100 - verbalGradeEffect(course2)) / 100.0) + (this.course2.verbalGrade * (verbalGradeEffect(course2)) / 100.0)));
+        System.out.println(this.course3.name + "     grade\t:" +((this.course3.note * (100 - verbalGradeEffect(course3)) / 100.0) + (this.course3.verbalGrade * (verbalGradeEffect(course3)) / 100.0)));
 
     }
 
