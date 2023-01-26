@@ -15,7 +15,7 @@ public class MaxMinFinder { //1,2,3,4
 
             if (arr[i]<number1)smallNearestNumber=arr[i];else break;
         }
-        for (int i = arr.length-1; i >0; i--) {
+        for (int i = arr.length-1; i >=0; i--) {
 
             if (arr[i]>number1)bigNearestNumber=arr[i];else break;
         }
