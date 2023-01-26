@@ -1,8 +1,19 @@
 package Series;
 
+import java.util.Scanner;
+
 public class SortNumbers {
 
-    public static void sort(int[] arr) {
+    public static void sort(int number1) {
+        Scanner scanner=new Scanner(System.in);
+        int[] arr =new int[number1];
+
+        for (int i = 0; i <number1 ; i++) {
+            System.out.print("enter the"+(i+1) +"number:");
+            int number2=scanner.nextInt();
+
+                arr[i]=number2;
+        }
 
         for (int i = 0; i < arr.length; i++) {
 
